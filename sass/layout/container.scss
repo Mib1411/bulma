@@ -41,6 +41,14 @@ $container-max-width: iv.$fullhd !default;
     }
   }
 
+  @include mx.until-ultrahd {
+    &.#{iv.$class-prefix}is-ultrahd:not(.#{iv.$class-prefix}is-fullhd:not(
+      .#{iv.$class-prefix}is-max-tablet):not(
+        .#{iv.$class-prefix}is-max-desktop
+      ):not(.#{iv.$class-prefix}is-max-widescreen) {
+      max-width: min(iv.$fullhd, $container-max-width) - $container-offset;
+    }
+  }
   @include mx.widescreen {
     &:not(.#{iv.$class-prefix}is-max-tablet):not(
         .#{iv.$class-prefix}is-max-desktop
