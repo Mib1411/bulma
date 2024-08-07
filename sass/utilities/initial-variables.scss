@@ -1,41 +1,14 @@
-// Scheme Hue and Saturation
 
-$scheme-h: 221 !default;
-$scheme-s: 14% !default;
-$dark-l: 20% !default;
-$light-l: 90% !default;
 
 // Colors
 
-$black: hsl(221, 14%, 4%) !default;
-$black-bis: hsl(221, 14%, 9%) !default;
-$black-ter: hsl(221, 14%, 14%) !default;
-
-$grey-darker: hsl(221, 14%, 21%) !default;
-$grey-dark: hsl(221, 14%, 29%) !default;
-$grey: hsl(221, 14%, 48%) !default;
-$grey-light: hsl(221, 14%, 71%) !default;
-$grey-lighter: hsl(221, 14%, 86%) !default;
-$grey-lightest: hsl(221, 14%, 93%) !default;
-
-$white-ter: hsl(221, 14%, 96%) !default;
-$white-bis: hsl(221, 14%, 98%) !default;
-$white: hsl(221, 14%, 100%) !default;
-
-$orange: hsl(14, 100%, 53%) !default;
-$yellow: hsl(42, 100%, 53%) !default;
-$green: hsl(153, 53%, 53%) !default;
-$turquoise: hsl(171, 100%, 41%) !default;
-$cyan: hsl(198, 100%, 70%) !default;
-$blue: hsl(233, 100%, 63%) !default;
-$purple: hsl(271, 100%, 71%) !default;
-$red: hsl(348, 100%, 70%) !default;
-
 // Typography
 
-$family-sans-serif: "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+$font-regular: "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
   "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
-$family-monospace: "Inconsolata", "Hack", "SF Mono", "Roboto Mono",
+$font-bold: "Inconsolata", "Hack", "SF Mono", "Roboto Mono",
+  "Source Code Pro", "Ubuntu Mono", monospace !default;
+$font-light: "Inconsolata", "Hack", "SF Mono", "Roboto Mono",
   "Source Code Pro", "Ubuntu Mono", monospace !default;
 $render-mode: optimizeLegibility !default;
 
