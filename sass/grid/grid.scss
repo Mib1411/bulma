@@ -3,9 +3,9 @@
 @use "../utilities/extends";
 @use "../utilities/mixins" as mx;
 
-$max-column-count: 12;
-$grip-gap: 0.75rem;
-$column-min-base: 1.5rem;
+$max-column-count: 12 !default;
+$grip-gap: 0.75rem!default;
+$column-min-base: 1.5rem!default;
 
 @mixin fixed-grid-properties($suffix: "") {
   @for $i from 1 through $max-column-count {
@@ -37,7 +37,7 @@ $grid-container-name: bulma-fixed-grid;
 
   @include fixed-grid-properties;
 
-  @include mx.container-until($grid-container-name, iv.$tablet) {
+  @include mx.container-until($grid-container-name, iv.$mobile) {
     @include fixed-grid-properties("-mobile");
   }
 
@@ -56,10 +56,13 @@ $grid-container-name: bulma-fixed-grid;
   @include mx.container-from($grid-container-name, iv.$fullhd) {
     @include fixed-grid-properties("-fullhd");
   }
+  @include mx.container-from($grid-container-name, iv.$ultrahd) {
+    @include fixed-grid-properties("-ultrahd");
+  }
 
   &.#{iv.$class-prefix}has-auto-count {
     .#{iv.$class-prefix}grid {
-      @include mx.container-until($grid-container-name, iv.$tablet) {
+      @include mx.container-until($grid-container-name, iv.$mobile) {
         @include cv.register-var("grid-column-count", 2);
       }
 
@@ -68,14 +71,18 @@ $grid-container-name: bulma-fixed-grid;
       }
 
       @include mx.container-from($grid-container-name, iv.$desktop) {
-        @include cv.register-var("grid-column-count", 8);
+        @include cv.register-var("grid-column-count", 6);
       }
 
       @include mx.container-from($grid-container-name, iv.$widescreen) {
-        @include cv.register-var("grid-column-count", 12);
+        @include cv.register-var("grid-column-count", 8);
       }
 
       @include mx.container-from($grid-container-name, iv.$fullhd) {
+        @include cv.register-var("grid-column-count", 12);
+      }
+
+      @include mx.container-from($grid-container-name, iv.$ultrahd) {
         @include cv.register-var("grid-column-count", 16);
       }
     }
