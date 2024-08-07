@@ -4,12 +4,9 @@
 
 // Typography
 
-$font-regular: "Inter", "SF Pro", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
-  "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
-$font-bold: "Inconsolata", "Hack", "SF Mono", "Roboto Mono",
-  "Source Code Pro", "Ubuntu Mono", monospace !default;
-$font-light: "Inconsolata", "Hack", "SF Mono", "Roboto Mono",
-  "Source Code Pro", "Ubuntu Mono", monospace !default;
+$font-regular: "Source Code Pro",  "Arial", sans-serif !default;
+$font-bold:  "Source Code Pro Bold",  "Arial Bold", sans-serif !default;
+$font-light:  "Source Code Pro Light",  "Arial Light", sans-serif !default;
 $render-mode: optimizeLegibility !default;
 
 $size-0: 0!default;
