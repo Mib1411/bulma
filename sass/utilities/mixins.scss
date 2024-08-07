@@ -9,6 +9,13 @@
   }
 }
 
+@mixin block($spacing: cv.getVar("block-spacing")) {
+  &:not(:last-child) {
+    margin-bottom: $spacing;
+  }
+}
+
+
 @mixin selection($current-selector: false) {
   @if $current-selector {
     &::-moz-selection {
