@@ -35,9 +35,9 @@ $displays: block flex inline inline-block inline-flex grid;
     }
   }
 
-  @include mx.touch {
-    .#{iv.$helpers-prefix}display-#{$display}-touch,
-    .#{iv.$helpers-prefix}#{$display}-touch {
+  @include mx.ultrahd {
+    .#{iv.$helpers-prefix}display-#{$display}-ultrahd,
+    .#{iv.$helpers-prefix}#{$display}-ultrahd {
       display: $display !important;
     }
   }
@@ -110,9 +110,9 @@ $displays: block flex inline inline-block inline-flex grid;
   }
 }
 
-@include mx.touch {
-  .#{iv.$helpers-prefix}display-none-touch,
-  .#{iv.$helpers-prefix}hidden-touch {
+@include mx.ultrahd {
+  .#{iv.$helpers-prefix}display-none-ultrahd,
+  .#{iv.$helpers-prefix}hidden-ultrahd {
     display: none !important;
   }
 }
