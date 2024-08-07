@@ -23,12 +23,12 @@ $size-28 :1.75rem!default;
 $size-32: 2rem!default;
 $size-48: 3rem!default;
 
-$weight-light: 300 !default;
+$weight-light: 400 !default;
 $weight-normal: 400 !default;
-$weight-medium: 500 !default;
-$weight-semibold: 600 !default;
-$weight-bold: 700 !default;
-$weight-extrabold: 800 !default;
+$weight-medium: 400 !default;
+$weight-semibold: 400 !default;
+$weight-bold: 400 !default;
+$weight-extrabold: 400 !default;
 
 // Spacing
 
@@ -55,6 +55,8 @@ $aspect-ratios: (
 
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 16px !default;
+
+$container-max-width: $fullhd - 2 * $gap;
 
 $tablet: 768px !default;
 
