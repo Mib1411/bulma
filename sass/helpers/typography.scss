@@ -2,41 +2,6 @@
 @use "../utilities/initial-variables" as iv;
 @use "../utilities/mixins" as mx;
 
-@mixin typography-size($target: "") {
-  @each $size in dv.$sizes {
-    $i: index(dv.$sizes, $size);
-
-    .#{iv.$helpers-prefix}size-#{$i}#{if($target == "", "", "-" + $target)} {
-      font-size: $size !important;
-    }
-  }
-}
-
-@include typography-size;
-
-@include mx.mobile {
-  @include typography-size("mobile");
-}
-
-@include mx.tablet {
-  @include typography-size("tablet");
-}
-
-@include mx.touch {
-  @include typography-size("touch");
-}
-
-@include mx.desktop {
-  @include typography-size("desktop");
-}
-
-@include mx.widescreen {
-  @include typography-size("widescreen");
-}
-
-@include mx.fullhd {
-  @include typography-size("fullhd");
-}
 
 $alignments: (
   "centered": "center",
