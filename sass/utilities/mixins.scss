@@ -9,6 +9,30 @@
   }
 }
 
+@mixin container-from($name, $width) {
+  @container #{$name} (min-width: #{$width}) {
+    @content;
+  }
+}
+
+@mixin container-until($name, $width) {
+  @container #{$name} (max-width: #{$width - 1px}) {
+    @content;
+  }
+}
+
+@mixin ltr {
+  @if not iv.$rtl {
+    @content;
+  }
+}
+
+@mixin rtl {
+  @if iv.$rtl {
+    @content;
+  }
+}
+
 @mixin block($spacing: cv.getVar("block-spacing")) {
   &:not(:last-child) {
     margin-bottom: $spacing;
