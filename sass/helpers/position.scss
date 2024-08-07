@@ -16,4 +16,49 @@ $positions: absolute fixed relative static sticky;
   .#{iv.$helpers-prefix}position-#{$position} {
     position: $position !important;
   }
+
+  @include mx.mobile {
+    .#{iv.$helpers-prefix}position-#{$position}-mobile {
+    position: $position !important;
+  }
+
+  @include mx.tablet {
+     .#{iv.$helpers-prefix}position-#{$position}-tablet {
+    position: $position !important;
+  }
+
+  @include mx.tablet-only {
+  .#{iv.$helpers-prefix}position-#{$position}-tablet-only {
+    position: $position !important;
+  }
+
+  @include mx.ultrahd {
+    .#{iv.$helpers-prefix}position-#{$position}-ultrahd {
+    position: $position !important;
+  }
+
+  @include mx.desktop {
+    .#{iv.$helpers-prefix}position-#{$position}-desktop {
+    position: $position !important;
+  }
+
+  @include mx.desktop-only {
+    .#{iv.$helpers-prefix}position-#{$position}-desktop-only {
+    position: $position !important;
+  }
+
+  @include mx.widescreen {
+    .#{iv.$helpers-prefix}position-#{$position}-widescreen {
+    position: $position !important;
+  }
+
+  @include mx.widescreen-only {
+    .#{iv.$helpers-prefix}position-#{$position}-widescreen-only {
+    position: $position !important;
+  }
+
+  @include mx.fullhd {
+  .#{iv.$helpers-prefix}position-#{$position}-fullhd {
+    position: $position !important;
+  }
 }
