@@ -29,26 +29,9 @@ $alignments: (
     }
   }
 
-  @include mx.tablet-only {
-    .#{iv.$helpers-has-prefix}text-#{$alignment}-tablet-only {
-      text-align: #{$text-align} !important;
-    }
-  }
-
-  @include mx.touch {
-    .#{iv.$helpers-has-prefix}text-#{$alignment}-touch {
-      text-align: #{$text-align} !important;
-    }
-  }
 
   @include mx.desktop {
     .#{iv.$helpers-has-prefix}text-#{$alignment}-desktop {
-      text-align: #{$text-align} !important;
-    }
-  }
-
-  @include mx.desktop-only {
-    .#{iv.$helpers-has-prefix}text-#{$alignment}-desktop-only {
       text-align: #{$text-align} !important;
     }
   }
@@ -59,14 +42,14 @@ $alignments: (
     }
   }
 
-  @include mx.widescreen-only {
-    .#{iv.$helpers-has-prefix}text-#{$alignment}-widescreen-only {
+  @include mx.fullhd {
+    .#{iv.$helpers-has-prefix}text-#{$alignment}-fullhd {
       text-align: #{$text-align} !important;
     }
   }
 
-  @include mx.fullhd {
-    .#{iv.$helpers-has-prefix}text-#{$alignment}-fullhd {
+  @include mx.ultrahd {
+    .#{iv.$helpers-has-prefix}text-#{$alignment}-ultrahd {
       text-align: #{$text-align} !important;
     }
   }
@@ -84,50 +67,19 @@ $alignments: (
   text-transform: uppercase !important;
 }
 
-.#{iv.$helpers-prefix}italic {
-  font-style: italic !important;
-}
-
 .#{iv.$helpers-prefix}underlined {
   text-decoration: underline !important;
 }
 
-.#{iv.$helpers-has-prefix}text-weight-light {
-  font-weight: iv.$weight-light !important;
+.#{iv.$helpers-prefix}regular {
+  font-family: dv.$font-regular !important;
 }
 
-.#{iv.$helpers-has-prefix}text-weight-normal {
-  font-weight: iv.$weight-normal !important;
+.#{iv.$helpers-prefix}bold{
+  font-family: dv.$font-bold !important;
 }
 
-.#{iv.$helpers-has-prefix}text-weight-medium {
-  font-weight: iv.$weight-medium !important;
+.#{iv.$helpers-prefix}light {
+  font-family: iv.$font-light !important;
 }
 
-.#{iv.$helpers-has-prefix}text-weight-semibold {
-  font-weight: iv.$weight-semibold !important;
-}
-
-.#{iv.$helpers-has-prefix}text-weight-bold {
-  font-weight: iv.$weight-bold !important;
-}
-
-.#{iv.$helpers-prefix}family-primary {
-  font-family: dv.$family-primary !important;
-}
-
-.#{iv.$helpers-prefix}family-secondary {
-  font-family: dv.$family-secondary !important;
-}
-
-.#{iv.$helpers-prefix}family-sans-serif {
-  font-family: iv.$family-sans-serif !important;
-}
-
-.#{iv.$helpers-prefix}family-monospace {
-  font-family: iv.$family-monospace !important;
-}
-
-.#{iv.$helpers-prefix}family-code {
-  font-family: dv.$family-code !important;
-}
