@@ -66,29 +66,14 @@ $spacing-values: (
 +tablet
   @include spacing-helpers('tablet')
 
-+tablet-only
-  @include spacing-helpers('tablet-only')
-
-+touch
-  @include spacing-helpers('touch')
-
 +desktop
   @include spacing-helpers('desktop')
-
-+desktop-only
-  @include spacing-helpers('desktop-only')
-
+  
 +widescreen
   @include spacing-helpers('widescreen')
 
-+widescreen-only
-  @include spacing-helpers('widescreen-only')
-
 +fullhd
   @include spacing-helpers('fullhd')
-  
-+fullhd-only
-  @include spacing-helpers('fullhd-only')
   
 +ultrahd
   @include spacing-helpers('ultrahd')
