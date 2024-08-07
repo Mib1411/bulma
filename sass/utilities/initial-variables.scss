@@ -56,21 +56,17 @@ $aspect-ratios: (
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 16px !default;
 
-// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-$tablet: 769px !default;
+$tablet: 768px !default;
 
-// 960px container + 4rem
-$desktop: 960px + 2 * $gap !default;
+$desktop: 1024px !default;
 
-// 1152px container + 4rem
-$widescreen: 1152px + 2 * $gap !default;
+$widescreen: 1216px  !default;
 $widescreen-enabled: true !default;
 
-// 1344px container + 4rem
-$fullhd: 1344px + 2 * $gap !default;
+$fullhd: 1408px;
 $fullhd-enabled: true !default;
 
-$ultrahd: 1888px + 2 * $gap !default;
+$ultrahd: 1920px ;
 $ultrahd-enabled: true !default;
 
 $breakpoints: (
@@ -110,17 +106,15 @@ $breakpoints: (
   "fullhd": (
     "from": $fullhd,
   ),
+  "fullhd-only": (
+    "from": $fullhd,
+    "until": $ultrahd,
+  ),
+  "ultrahd": (
+    "from": $ultrahd,
+  ),
 ) !default;
 
-// Miscellaneous
-
-$easing: ease-out !default;
-$radius-small: 0.25rem !default;
-$radius: 0.375rem !default;
-$radius-medium: 0.5em !default;
-$radius-large: 0.75rem !default;
-$radius-rounded: 9999px !default;
-$speed: 86ms !default;
 
 // Flags
 
@@ -130,6 +124,6 @@ $rtl: false !default;
 // Prefixes
 
 $class-prefix: "" !default;
-$cssvars-prefix: "bulma-" !default;
+$cssvars-prefix: "" !default;
 $helpers-prefix: "is-" !default;
 $helpers-has-prefix: "has-" !default;
