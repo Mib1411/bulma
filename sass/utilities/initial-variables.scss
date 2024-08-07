@@ -56,7 +56,7 @@ $aspect-ratios: (
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 16px !default;
 
-$container-max-width: $fullhd - 2 * $gap;
+$container-max-width: $fullhd - 2*$gap !default;
 
 $tablet: 768px !default;
 
@@ -82,8 +82,8 @@ $breakpoints: (
     "from": $tablet,
     "until": $desktop,
   ),
-  "touch": (
-    "from": $desktop,
+  "until-desktop": (
+    "until": $desktop,
   ),
   "desktop": (
     "from": $desktop,
